@@ -12,6 +12,8 @@ start = time.time()
 
 TODAY = date.today().strftime('%Y_%m_%d')
 
+
+# Preparing a function to create emails with attached parts of the data
 def Emailer(text, subject, recipient, attachment, filename):
     
     outlook = win32.Dispatch('outlook.application')
